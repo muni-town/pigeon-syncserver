@@ -3,9 +3,11 @@
     "dev": "deno run --unstable-kv -A --watch main.ts"
   },
   "imports": {
+    "@muni-town-temp/earthstar": "jsr:@muni-town-temp/earthstar@11.0.0-beta.7.patched.3",
     "itty-router": "npm:itty-router",
     "@std/assert": "jsr:@std/assert@1",
+    "@std/async": "jsr:@std/async@1",
     "@std/encoding": "jsr:@std/encoding@1",
-    "@earthstar/earthstar": "jsr:@muni-town-temp/earthstar@11.0.0-beta.7.patched.1"
+    "@earthstar/willow": "jsr:@muni-town-temp/willow@~0.6.1-patched.3"
   }
 }

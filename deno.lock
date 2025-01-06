@@ -4,20 +4,25 @@
     "jsr:@earthstar/meadowcap@~0.6.4": "0.6.4",
     "jsr:@earthstar/willow-utils@2": "2.0.1",
     "jsr:@korkje/fifo@~0.2.4": "0.2.4",
-    "jsr:@muni-town-temp/earthstar@11.0.0-beta.7.patched.1": "11.0.0-beta.7.patched.1",
-    "jsr:@muni-town-temp/willow@~0.6.1-patched.1": "0.6.1-patched.1",
-    "jsr:@noble/ed25519@^2.1.0": "2.1.0",
+    "jsr:@muni-town-temp/earthstar@11.0.0-beta.7.patched.3": "11.0.0-beta.7.patched.1",
+    "jsr:@muni-town-temp/willow@~0.6.1-patched.1": "0.6.1-patched.3",
+    "jsr:@muni-town-temp/willow@~0.6.1-patched.3": "0.6.1-patched.3",
+    "jsr:@noble/ed25519@^2.1.0": "2.2.2",
     "jsr:@std/assert@0.224": "0.224.0",
     "jsr:@std/assert@0.226": "0.226.0",
+    "jsr:@std/assert@1": "1.0.10",
+    "jsr:@std/async@1": "1.0.9",
     "jsr:@std/bytes@0.224": "0.224.0",
     "jsr:@std/crypto@0.224": "0.224.0",
     "jsr:@std/data-structures@0.224": "0.224.1",
     "jsr:@std/encoding@0.224": "0.224.3",
+    "jsr:@std/encoding@1": "1.0.6",
     "jsr:@std/encoding@~0.224.1": "0.224.3",
     "jsr:@std/fs@~0.229.1": "0.229.3",
+    "jsr:@std/internal@^1.0.5": "1.0.5",
     "jsr:@std/path@1.0.0-rc.1": "1.0.0-rc.1",
     "jsr:@std/path@~0.225.1": "0.225.2",
-    "npm:@noble/curves@^1.4.0": "1.7.0",
+    "npm:@noble/curves@^1.4.0": "1.8.0",
     "npm:hash-wasm@^4.11.0": "4.12.0",
     "npm:itty-router@*": "5.0.18"
   },
@@ -43,7 +48,7 @@
       "dependencies": [
         "jsr:@earthstar/meadowcap",
         "jsr:@earthstar/willow-utils",
-        "jsr:@muni-town-temp/willow",
+        "jsr:@muni-town-temp/willow@~0.6.1-patched.1",
         "jsr:@noble/ed25519",
         "jsr:@std/bytes",
         "jsr:@std/crypto",
@@ -54,8 +59,8 @@
         "npm:hash-wasm"
       ]
     },
-    "@muni-town-temp/willow@0.6.1-patched.1": {
-      "integrity": "6ca0c0ea8c0c0c3c0f7480757977aba70b890699a37ae3a556ffa8e0a3496bd3",
+    "@muni-town-temp/willow@0.6.1-patched.3": {
+      "integrity": "59b4c0dc9d1322581aa9e32721509cc52b2ea8195929f4ef13b705d6c61800d7",
       "dependencies": [
         "jsr:@earthstar/willow-utils",
         "jsr:@korkje/fifo",
@@ -66,14 +71,23 @@
         "jsr:@std/path@~0.225.1"
       ]
     },
-    "@noble/ed25519@2.1.0": {
-      "integrity": "59a6ad395a37a0d065f6a2771e56fe52ea4bd9070c77bdaca5c475f5184412cc"
+    "@noble/ed25519@2.2.2": {
+      "integrity": "e3ffb4e1bc0b14f4b2be2936f5fcaa4e79279ea7c4a215be0e54d0e552893089"
     },
     "@std/assert@0.224.0": {
       "integrity": "8643233ec7aec38a940a8264a6e3eed9bfa44e7a71cc6b3c8874213ff401967f"
     },
     "@std/assert@0.226.0": {
       "integrity": "0dfb5f7c7723c18cec118e080fec76ce15b4c31154b15ad2bd74822603ef75b3"
+    },
+    "@std/assert@1.0.10": {
+      "integrity": "59b5cbac5bd55459a19045d95cc7c2ff787b4f8527c0dd195078ff6f9481fbb3",
+      "dependencies": [
+        "jsr:@std/internal"
+      ]
+    },
+    "@std/async@1.0.9": {
+      "integrity": "c6472fd0623b3f3daae023cdf7ca5535e1b721dfbf376562c0c12b3fb4867f91"
     },
     "@std/bytes@0.224.0": {
       "integrity": "a2250e1d0eb7d1c5a426f21267ab9bdeac2447fa87a3d0d1a467d3f7a6058e49"
@@ -91,11 +105,17 @@
     "@std/encoding@0.224.3": {
       "integrity": "5e861b6d81be5359fad4155e591acf17c0207b595112d1840998bb9f476dbdaf"
     },
+    "@std/encoding@1.0.6": {
+      "integrity": "ca87122c196e8831737d9547acf001766618e78cd8c33920776c7f5885546069"
+    },
     "@std/fs@0.229.3": {
       "integrity": "783bca21f24da92e04c3893c9e79653227ab016c48e96b3078377ebd5222e6eb",
       "dependencies": [
         "jsr:@std/path@1.0.0-rc.1"
       ]
+    },
+    "@std/internal@1.0.5": {
+      "integrity": "54a546004f769c1ac9e025abd15a76b6671ddc9687e2313b67376125650dc7ba"
     },
     "@std/path@0.225.2": {
       "integrity": "0f2db41d36b50ef048dcb0399aac720a5348638dd3cb5bf80685bf2a745aa506",
@@ -108,14 +128,14 @@
     }
   },
   "npm": {
-    "@noble/curves@1.7.0": {
-      "integrity": "sha512-UTMhXK9SeDhFJVrHeUJ5uZlI6ajXg10O6Ddocf9S6GjbSBVZsJo88HzKwXznNfGpMTRDyJkqMjNDPYgf0qFWnw==",
+    "@noble/curves@1.8.0": {
+      "integrity": "sha512-j84kjAbzEnQHaSIhRPUmB3/eVXu2k3dKPl2LOrR8fSOIL+89U+7lV117EWHtq/GHM3ReGHM46iRBdZfpc4HRUQ==",
       "dependencies": [
         "@noble/hashes"
       ]
     },
-    "@noble/hashes@1.6.0": {
-      "integrity": "sha512-YUULf0Uk4/mAA89w+k3+yUYh6NrEvxZa5T6SY3wlMvE2chHkxFUUIDI8/XW1QSC357iA5pSnqt7XEhvFOqmDyQ=="
+    "@noble/hashes@1.7.0": {
+      "integrity": "sha512-HXydb0DgzTpDPwbVeDGCG1gIu7X6+AuU6Zl6av/E/KG8LMsvPntvq+w17CHRpKBmN6Ybdrt1eP3k4cj8DJa78w=="
     },
     "hash-wasm@4.12.0": {
       "integrity": "sha512-+/2B2rYLb48I/evdOIhP+K/DD2ca2fgBjp6O+GBEnCDk2e4rpeXIK8GvIyRPjTezgmWn9gmKwkQjjx6BtqDHVQ=="
@@ -126,8 +146,10 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@muni-town-temp/earthstar@11.0.0-beta.7.patched.1",
+      "jsr:@muni-town-temp/earthstar@11.0.0-beta.7.patched.3",
+      "jsr:@muni-town-temp/willow@~0.6.1-patched.3",
       "jsr:@std/assert@1",
+      "jsr:@std/async@1",
       "jsr:@std/encoding@1",
       "npm:itty-router@*"
     ]
